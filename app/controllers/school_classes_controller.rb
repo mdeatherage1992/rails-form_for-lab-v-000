@@ -8,7 +8,7 @@ def show
 end
 
 def new
-  @student = Student.new
+  @school_class = SchoolClass.new
 end
 
 def create
