@@ -1,10 +1,10 @@
 class SchoolClassesController < ApplicationController
   def index
-  @students = Student.all
+  @school_classes = SchoolClass.all
   end
 
 def show
-  @student = Student.find(params[:id])
+  @school_class = SchoolClass.find(params[:id])
 end
 
 def new
