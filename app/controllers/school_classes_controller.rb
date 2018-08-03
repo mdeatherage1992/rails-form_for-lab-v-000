@@ -26,6 +26,6 @@ end
 def update
   @school_class = SchoolClass.find(params[:id])
   @school_class.update(params.require(:student))
-  redirect_to student_path(@student)
+  redirect_to school_class_path(@school_class)
 end
 end
