@@ -27,8 +27,8 @@ def edit
 end
 
 def update
-  @post = Post.find(params[:id])
-  @post.update(params.require(:post))
-  redirect_to post_path(@post)
+  @student = Student.find(params[:id])
+  @Student.update(params.require(:student))
+  redirect_to student_path(@student)
 end
 end
