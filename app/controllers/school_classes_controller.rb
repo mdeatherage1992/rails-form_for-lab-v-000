@@ -16,7 +16,7 @@ def create
   @school_class.title = params[:title]
   @school_class.last_name = params[:room_number]
   @school_class.save
-  redirect_to student_path(@student)
+  redirect_to school_class_path(@school_class)
 end
 
 def edit
