@@ -12,7 +12,7 @@ def new
 end
 
 def create
-  @student = Student.new
+  @school_class = SchoolClass.new
   @Student.first_name = params[:first_name]
   @student.last_name = params[:last_name]
   @student.save
